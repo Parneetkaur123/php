@@ -2,7 +2,7 @@
 session_start();
 // session_destroy();
 
-include "sessioncode.php";
+// include "sessioncode.php";
 ?>
 <html>
 <head></head>
@@ -45,7 +45,7 @@ padding: 70px 30px; color: aliceblue ">
   <label>First Name</label>
          <input type="text" name="fname" placeholder="Enter 1st name"/><br><br>
          <?php
-            if(!empty($_SESSION["error"]["fname"]))
+            if(!empty($_SESSION['error']['fname']))
             {
                 echo $_SESSION["error"]["fname"];
             }
@@ -72,10 +72,10 @@ padding: 70px 30px; color: aliceblue ">
          <label>Mobile No.</label>
          <input type="text" name="mobile" placeholder="Mobile no."/><br><br>
         <?php 
-        if(!empty($_SESSION["error"]["mobile"]))
-            {
-                echo $_SESSION["error"]["mobile"];
-            }
+        // if(!empty($_SESSION["error"]["mobile"]))
+        //     {
+        //         echo $_SESSION["error"]["mobile"];
+        //     }
         ?>
          <label>Gender</label>
          <input type="radio" name="gender" value="male"/>male
@@ -99,9 +99,9 @@ padding: 70px 30px; color: aliceblue ">
             {
                 echo $_SESSION["error"]["password"];
             }
-            ?>
+         ?>
         
-            <center><input type="Submit" name="submit"/></center>
+            <center><input type="Submit" name="submit" value="submit"/></center>
             <p>If you have an account. Login here!!</p><a href=loginphp1.php>Login</a>
 
         </form>

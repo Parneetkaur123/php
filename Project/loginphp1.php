@@ -72,18 +72,18 @@ background: purple;
           <label for="username">username:</label>
             <input type="text" name="email" placeholder="@gmail.com"/><br>
             <?php
-                if(!empty ($_SESSION['error']['email']))
-                {
-                    echo $_SESSION['error']['email'];
-                }
+                // if(!empty ($_SESSION['error']['email']))
+                // {
+                //     echo $_SESSION['error']['email'];
+                // }
             ?>
             <label for="password">password:</label>
             <input type="password" name="password" placeholder="Enter here"/><br><br>
             <?php
-                if(!empty ($_SESSION['error']['password']))
-                {
-                    echo $_SESSION['error']['password'];
-                }
+                // if(!empty ($_SESSION['error']['password']))
+                // {
+                //     echo $_SESSION['error']['password'];
+                // }
             ?>
             <input type="submit" name="submit" value="submit"/>
             <p>back to signup</p><a href=signin.php>sign up</a>
