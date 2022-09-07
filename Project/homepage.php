@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+session_destroy();
 ?>
 <!DOCTYPE html>
 <html>
@@ -54,7 +54,7 @@ session_start();
             ?>
         </tr>
     </table>
-    <a href="logout.php">Logout</a> 
+    <a href="logout.php">Logout</a>  -->
 
 </body>
 </html>

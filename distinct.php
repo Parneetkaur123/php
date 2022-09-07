@@ -1,24 +1,21 @@
 <?php
-$a= array(8,8,9,5,2,4,6);
+$a= array(8,6,9,8,4,3,5,6);
 function distinct($a)
 {
 sort($a);
-for($i=0; $i<count($a);$i++)
+for($i=0; $i<=count($a)-1;$i++)
 {
-    if($a[$i] != $a[$i+1])
+    if(isset($a[$i+1]) && $a[$i] != $a[$i+1])
     {
-        
-        echo $a[$i];
-        
+       echo "<pre>"; 
+        print $a[$i];
+        echo "</pre>";
     }
     else
     {
         continue;
     }
-
 }
 }
 distinct($a);
-
-
 ?>

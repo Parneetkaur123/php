@@ -1,5 +1,6 @@
 <?php
 session_start();
+session_destroy();
 include "loginphp1code.php";
 ?>
 <html>

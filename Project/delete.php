@@ -1,5 +1,6 @@
 <?php
 session_start();
+session_destroy();
 $id=$_GET['id'];
 foreach($_SESSION['User'] as $key=>$value)
 {
